@@ -1,0 +1,103 @@
+.navigation {
+    position: relative;
+
+    &__list {
+        min-width: 200px;
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: -5px;
+        padding-top: 48px;
+        list-style: none;
+        background-color: var(--background);
+        border: 1px solid var(--secondary-border);
+        border-radius: var(--content-border-radius);
+        transform: scale(0, 0);
+        opacity: 0;
+        transform-origin: top right;
+
+        &--open {
+            transform: scale(1, 1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 1;
+        }
+    }
+
+    &__link {
+        display: block;
+        margin: 4px;
+        padding: var(--control-padding-y) var(--control-padding-x);
+        border-radius: 12px;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: var(--primary-hover);
+            color: var(--background);
+        }
+    }
+
+    &__icon {
+        position: relative;
+        z-index: 2;
+        display: block;
+        padding: 8px;
+        fill: var(--text);
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+    }
+}
+
+@include breakpoint(360px) {
+    .navigation {
+        &__item {
+            &--contact {
+                display: none;
+            }
+        }
+    }
+}
+
+@include xl {
+    .navigation {
+        max-width: 405px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+
+        &__list {
+            position: static;
+            opacity: 1;
+            transform: none;
+            padding-top: 0px;
+            background-color: transparent;
+            border: none;
+            border-radius: 50px;
+        }
+
+        &__item {
+            display: inline-block;
+
+            &--contact {
+                display: none;
+            }
+        }
+
+        &__link {
+            padding: var(--badge-padding-y) var(--badge-padding-x);
+            border-radius: 50px;
+        }
+
+        &__icon {
+            display: none;
+        }
+    }
+}

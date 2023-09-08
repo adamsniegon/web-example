@@ -1,0 +1,150 @@
+.hero {
+    margin: auto;
+    max-width: 900px;
+
+    &__headline {
+        position: relative;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        text-align: center;
+        position: relative;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@include breakpoint(360px) {
+    .hero {
+        padding: 5px;
+
+        &__line {
+            width: 1px;
+            height: calc(100% + 10px);
+            top: -5px;
+            position: absolute;
+            background-image: repeating-linear-gradient(180deg, var(--grid) 0px, var(--grid) 4px, var(--background) 4px, var(--background) 8px);
+            background-size: 1px 16px;
+            background-position: 0 0;
+            background-repeat: repeat-y;
+
+            &--left {
+                left: 0px;
+            }
+
+            &--right {
+                right: 0px;
+            }
+        }
+
+        &__wrapper {
+            padding: 20px;
+            position: relative;
+
+            &::before, &::after {
+                content: '';
+                width: calc(100% + 10px);
+                height: 1px;
+                position: absolute;
+                left: -5px;
+                background-image: repeating-linear-gradient(90deg, var(--grid) 0px, var(--grid) 4px, var(--background) 4px, var(--background) 8px);
+                background-size: 16px 1px;
+                background-position: 0 0;
+                background-repeat: repeat-x;
+            }
+
+            &::before {
+                top: 0px;
+            }
+
+            &::after {
+                bottom: 0px;
+            }
+        }
+
+        &__text {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+
+            &::after {
+                content: '';
+                width: calc(100% + 50px);
+                height: 1px;
+                position: absolute;
+                left: -25px;
+                bottom: 0px;
+                background-image: repeating-linear-gradient(90deg, var(--grid) 0px, var(--grid) 4px, var(--background) 4px, var(--background) 8px);
+                background-size: 16px 1px;
+                background-position: 0 0;
+                background-repeat: repeat-x;
+            }
+        }
+    }
+}
+
+@include sm {
+    .hero {
+        padding: 20px;
+
+        &__line {
+            height: calc(100% + 40px);
+            top: -20px;
+        }
+
+        &__wrapper {
+            padding: 20px;
+
+            &::before, &::after {
+                width: calc(100% + 40px);
+                left: -20px;
+            }
+        }
+
+        &__text {
+            &::after {
+                width: calc(100% + 80px);
+                left: -40px;
+            }
+        }
+    }
+}
+
+@include md {
+    .hero {
+        padding: 40px;
+
+        &__line {
+            height: calc(100% + 40px);
+            top: -20px;
+        }
+
+        &__wrapper {
+            padding: 40px;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+
+            &::after {
+                width: calc(100% + 120px);
+                left: -60px;
+            }
+        }
+    }
+}
+
+@include xl {
+    .hero {
+        margin-top: 20px;
+    }
+}
+
+@include breakpoint(1500px) {
+    .hero {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

@@ -1,0 +1,21 @@
+.gradientContainer {
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+
+    &__inner {
+        display: inline-block;
+        background: linear-gradient(var(--background), var(--background)) padding-box,
+            linear-gradient(135deg, var(--primary), var(--primary-gradient-end)) border-box;
+        border: 1px solid transparent;
+        border-radius: var(--control-border-radius);
+    }
+}

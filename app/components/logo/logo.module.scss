@@ -1,0 +1,26 @@
+.logo {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+
+    &__image {
+        height: 24px;
+        fill: var(--primary);
+        display: block;
+        transition: fill 0.3s ease;
+
+        &:hover {
+            fill: var(--primary-hover);
+        }
+    }
+}
+
+@include sm {
+    .logo {
+        &__image {
+            height: 28px;
+        }
+    }
+}

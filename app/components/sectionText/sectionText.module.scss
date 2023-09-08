@@ -1,0 +1,18 @@
+.sectionText {
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+    
+    &__inner {
+        max-width: 900px;
+        display: inline-block;
+    }
+}

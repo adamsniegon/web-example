@@ -1,0 +1,168 @@
+@keyframes loadingAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.button {
+    position: relative;
+    padding: var(--control-padding-y) var(--control-padding-x);
+    border: 1px solid;
+    border-radius: var(--control-border-radius);
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+
+    &--solid {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: var(--background);
+
+        &:hover {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+            cursor: pointer;
+        }
+
+        &.button--loading {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+            color: transparent;
+            cursor: default;
+        }
+
+        &.button:disabled {
+            background-color: var(--primary-disabled);
+            border-color: var(--primary-disabled);
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+        border-color: var(--primary);
+        color: var(--primary);
+
+        &:hover {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+            color: var(--background);
+            cursor: pointer;
+        }
+
+        &.button--loading {
+            background-color: transparent;
+            border-color: var(--primary-hover);
+            color: var(--primary-hover);
+            color: transparent;
+            cursor: default;
+
+            &.button:disabled {
+                color: transparent;
+            }
+        }
+
+        &.button:disabled {
+            background-color: transparent;
+            border-color: var(--primary-disabled);
+            color: var(--primary-disabled);
+        }
+    }
+
+    &--solid-reverse {
+        background-color: var(--primary-reverse);
+        border-color: var(--primary-reverse);
+        color: var(--background-reverse);
+
+        &:hover {
+            background-color: var(--primary-hover-reverse);
+            border-color: var(--primary-hover-reverse);
+            cursor: pointer;
+        }
+
+        &.button--loading {
+            background-color: var(--primary-hover-reverse);
+            border-color: var(--primary-hover-reverse);
+            color: transparent;
+            cursor: default;
+        }
+
+        &.button:disabled {
+            background-color: var(--primary-disabled-reverse);
+            border-color: var(--primary-disabled-reverse);
+        }
+    }
+
+    &--outline-reverse {
+        background-color: transparent;
+        border-color: var(--primary-reverse);
+        color: var(--primary-reverse);
+
+        &:hover {
+            background-color: var(--primary-hover-reverse);
+            border-color: var(--primary-hover-reverse);
+            color: var(--background-reverse);
+            cursor: pointer;
+        }
+
+        &.button--loading {
+            background-color: transparent;
+            border-color: var(--primary-hover-reverse);
+            color: transparent;
+            cursor: default;
+
+            &.button:disabled {
+                color: transparent;
+            }
+        }
+
+        &.button:disabled {
+            background-color: transparent;
+            border-color: var(--primary-disabled-reverse);
+            color: var(--primary-disabled-reverse);
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+
+    &__loader {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        inset: 0px;
+        margin: auto;
+        border: 3px solid;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: loadingAnimation 1s linear infinite;
+
+        .button--solid.button--loading & {
+            color: var(--background);
+        }
+
+        .button--outline.button--loading & {
+            color: var(--primary-hover);
+        }
+
+        .button--outline.button--loading:disabled & {
+            color: var(--primary-disabled);
+        }
+
+        .button--solid-reverse.button--loading & {
+            color: var(--background-reverse);
+        }
+
+        .button--outline-reverse.button--loading & {
+            color: var(--primary-hover-reverse);
+        }
+
+        .button--outline-reverse.button--loading:disabled & {
+            color: var(--primary-disabled-reverse);
+        }
+    }
+}

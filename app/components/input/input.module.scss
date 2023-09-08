@@ -1,0 +1,91 @@
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--control-padding-y) var(--control-padding-x);
+    border: 1px solid;
+    border-radius: var(--control-border-radius);
+
+    &--normal {
+        background-color: var(--secondary);
+        border-color: var(--secondary-border);
+        color: var(--text);
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 40px var(--secondary) inset;
+            -webkit-text-fill-color: var(--text);
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &.input--error {
+            background-color: var(--error-background);
+            border-color: var(--error);
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        &:disabled {
+            background-color: transparent;
+            color: var(--primary-disabled);
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+                -webkit-box-shadow: 0 0 0 40px var(--background) inset;
+                -webkit-text-fill-color: var(--primary-disabled);
+            }
+        }
+    }
+
+    &--reverse {
+        background-color: var(--secondary-reverse);
+        border-color: var(--secondary-border-reverse);
+        color: var(--text-reverse);
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover, 
+        &:-webkit-autofill:focus, 
+        &:-webkit-autofill:active  {
+            -webkit-box-shadow: 0 0 0 40px var(--secondary-reverse) inset !important;
+            -webkit-text-fill-color: var(--text-reverse);
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &.input--error {
+            background-color: var(--error-background-reverse);
+            border-color: var(--error-reverse);
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        &:disabled {
+            background-color: transparent;
+            color: var(--primary-disabled-reverse);
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover, 
+            &:-webkit-autofill:focus, 
+            &:-webkit-autofill:active  {
+                -webkit-box-shadow: 0 0 0 40px var(--background-reverse) inset !important;
+                -webkit-text-fill-color: var(--primary-disabled-reverse);
+            }
+        }
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+    }
+}

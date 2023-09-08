@@ -1,0 +1,24 @@
+.serviceCard {
+    &__icon-wrapper {
+        width: 36px;
+        height: 36px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        display: flex;
+        fill: var(--primary);
+    }
+
+    &__headline {
+        margin-top: 16px;
+        margin-bottom: 4px;
+    }
+
+    &__list {
+        margin-left: 20px;
+    }
+}

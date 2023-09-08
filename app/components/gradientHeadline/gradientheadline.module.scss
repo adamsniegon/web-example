@@ -1,0 +1,30 @@
+.gradientHeadline {
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+    }
+    
+    &__inner {
+        display: inline-block;
+        -webkit-text-fill-color: transparent;
+
+        &--normal {
+            background: linear-gradient(135deg, var(--primary), var(--primary-gradient-end));
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        &--reverse {
+            background: linear-gradient(135deg, var(--primary-reverse), var(--primary-gradient-end-reverse));
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    }
+}

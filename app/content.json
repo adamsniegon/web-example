@@ -1,0 +1,208 @@
+{
+    "navigation": {
+        "home": "Domů",
+        "services": "Služby",
+        "portfolio": "Portfolio",
+        "references": "Reference",
+        "contact": "Kontakt"
+    },
+    "info": {
+        "address": [
+            "Digital Age Studio",
+            "Orlová-Lutyně",
+            "735 14"
+        ],
+        "contact": [
+            "info@digitalage.studio"
+        ]
+    },
+    "about": "Jsme digitální agentura, která se vyzná ve 21. století a pomůže Vašemu businessu růst.",
+    "socials": {
+        "facebook": "https://www.facebook.com/digitalagestudiocz",
+        "instagram": "https://www.instagram.com/digitalagestudio"
+    },
+    "action": "Kontaktovat",
+    "cookies": {
+        "text": "Pro vyhodnocování návštěvnosti používáme cookies třetích stran. Souhlasíte s jejich použitím?",
+        "buttons": {
+            "accept": "Přijmout",
+            "reject": "Odmítnout"
+        }
+    },
+    "googleRecaptchaNotice": "Tato stránka je chráněna pomocí technologie reCAPTCHA, pro kterou platí <a href='https://policies.google.com/privacy'>zásady ochrany osobních údajů</a> a <a href='https://policies.google.com/terms'>smluvní podmínky</a> společnosti Google.",
+    "form": {
+        "success": "Formulář byl úspěšně odeslán. Brzy Vás budeme kontaktovat.",
+        "generalError": "Při odesílání formuláře došlo k chybě. Kontaktujte nás skrze email info@digitalage.studio",
+        "button": "Odeslat",
+        "fields": {
+            "name": {
+                "label": "Jméno a příjmení",
+                "error": {
+                    "empty": "Vyplňte prosím jméno a příjmení."
+                }
+            },
+            "company": {
+                "label": "Společnost (nepovinné)"
+            },
+            "email": {
+                "label": "E-mail",
+                "error": {
+                    "empty": "Vyplňte prosím e-mail.",
+                    "format": "E-mail má nesprávný formát."
+                }
+            },
+            "phone": {
+                "label": "Telefon (nepovinné)",
+                "error": {
+                    "format": "Telefonní číslo má nesprávný formát."
+                }
+            },
+            "message": {
+                "label": "Vaše zpráva",
+                "error": {
+                    "empty": "Vyplňte prosím zprávu."
+                }
+            }
+        }
+    },
+    "section": {
+        "hero": {
+            "headline": "Převedeme Váš business do 21. století.",
+            "text": "Jsme digitální agentura, která se vyzná ve 21. století a pomůže Vašemu businessu růst. Kontaktujte nás pomocí nezávazného formuláře a my se Vám ozveme."
+        },
+        "services": {
+            "badge": "Služby",
+            "headline": "Od grafiky po aplikace. Vše pokryto.",
+            "text": "Poskytujeme široké spektrum služeb od tvorby grafiky, přes webové stránky až po tvorbu komplexních webových aplikací a e-shopů.",
+            "list": [
+                {
+                    "id": "web",
+                    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 -960 960 960'><path d='M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h420v-140H160v140Zm500 0h140v-360H660v360ZM160-460h420v-140H160v140Z'/></svg>",
+                    "name": "Webové stránky",
+                    "list": [
+                        "jedinečný design vytvořený na míru",
+                        "přizpůsobení jakémkoliv displeji",
+                        "SEO optimalizace pro vyhledavače"
+                    ]
+                },
+                {
+                    "id": "graphics",
+                    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 -960 960 960'><path d='M560-120q-17 0-28.5-11.5T520-160q0-17 11.5-28.5T560-200q47 0 83.5-18.5T680-260q0-14-13-26t-36-22l59-59q32 19 51 45t19 62q0 66-63 103t-137 37ZM183-426q-29-17-46-39.5T120-520q0-42 31-70.5T262-654q63-29 80.5-40.5T360-720q0-16-19.5-28T280-760q-25 0-42 6t-31 20q-11 11-27 13t-29-9q-13-10-15-26t9-29q19-23 54.5-39t80.5-16q72 0 116 32.5t44 87.5q0 39-29 70t-117 69q-58 25-76 37t-18 24q0 9 11.5 17.5T243-486l-60 60Zm571-118L584-714l42-42q24-24 57.5-24t56.5 24l56 56q24 23 24 56.5T796-586l-42 42ZM240-200h56l288-288-56-56-288 288v56Zm-80 80v-170l368-368 170 170-368 368H160Zm368-424 56 56-56-56Z'/></svg>",
+                    "name": "Grafika",
+                    "list": [
+                        "poutavé návrhy webů a aplikací",
+                        "tvorba nezaměnitelné identity",
+                        "profesionální úprava fotografií"
+                    ]
+                },
+                {
+                    "id": "socials",
+                    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 -960 960 960'><path d='M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-82v-78q-33 0-56.5-23.5T360-320v-40L168-552q-3 18-5.5 36t-2.5 36q0 121 79.5 212T440-162Zm276-102q20-22 36-47.5t26.5-53q10.5-27.5 16-56.5t5.5-59q0-98-54.5-179T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h240q17 0 28.5 11.5T600-440v120h40q26 0 47 15.5t29 40.5Z'/></svg>",
+                    "name": "Sociální sítě",
+                    "list": [
+                        "kompletní správa sociálních sítí",
+                        "vizuálně atraktivní příspěvky",
+                        "budování komunity na internetu"
+                    ]
+                },
+                {
+                    "id": "ecommerce",
+                    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 -960 960 960'><path d='M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z'/></svg>",
+                    "name": "E-commerce",
+                    "list": [
+                        "intuitivní uživatelské rozhraní",
+                        "systém pro správu obsahu e-shopu",
+                        "propojení s platebními bránami"
+                    ]
+                },
+                {
+                    "id": "apps",
+                    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 -960 960 960'><path d='M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z'/></svg>",
+                    "name": "Aplikace",
+                    "list": [
+                        "vývoj splňující nejvyšší požadavky",
+                        "jedinečné uživatelské rozhraní",
+                        "fungování na všech systémech"
+                    ]
+                },
+                {
+                    "id": "consultation",
+                    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 -960 960 960'><path d='M480-40v-80h280v-40H600v-320h160v-40q0-116-82-198t-198-82q-116 0-198 82t-82 198v40h160v320H200q-33 0-56.5-23.5T120-240v-280q0-74 28.5-139.5T226-774q49-49 114.5-77.5T480-880q74 0 139.5 28.5T734-774q49 49 77.5 114.5T840-520v400q0 33-23.5 56.5T760-40H480ZM200-240h80v-160h-80v160Zm480 0h80v-160h-80v160Zm80 0h-80 80Zm-480 0h-80 80Z'/></svg>",
+                    "name": "Konzultace",
+                    "list": [
+                        "analýza podnikového webu a sítí",
+                        "zhodnocení stavu Vašeho businessu",
+                        "návrh dalších kroků v podnikání"
+                    ]
+                }
+            ]
+        },
+        "portfolio": {
+            "badge": "Portfolio",
+            "headline": "Necháváme naši práci mluvit za nás.",
+            "text": "Máme za sebou řadu projektů od jednoduchých webových stránek, přes loga a bannery až po náročné webové aplikace.",
+            "list": [
+                {
+                    "id": "stehovani3nec",
+                    "headline": "Webové stránky pro jedničku ve stěhování v Třinci"
+                },
+                {
+                    "id": "cdo",
+                    "headline": "Kompletní redesign portálu  a vývoj aplikace pro porotce"
+                },
+                {
+                    "id": "dumbbella",
+                    "headline": "Branding pro novou módní značku"
+                },
+                {
+                    "id": "apple",
+                    "headline": "Designová studie kampaně pro Apple produkty"
+                },
+                {
+                    "id": "inmapa",
+                    "headline": "Interaktivní turistická mapa pro Moravsko-slezský kraj"
+                },
+                {
+                    "id": "suckuj",
+                    "headline": "Produktový katalog a příspěvky na sociální sítě"
+                },
+                {
+                    "id": "bergersafety",
+                    "headline": "Grafika k výroční založení firmy Berger Safety"
+                }
+            ],
+            "button": "Číst více"
+        },
+        "references": {
+            "badge": "Reference",
+            "headline": "Přidejte se k dalším spokojeným klientům.",
+            "text": "Pro naše klienty se snažíme udělat maximum a tak předčit tak jejich očekávání. Jejich vyjádření pak mluví za vše.",
+            "list": [
+                {
+                    "image": "/profile-default.svg",
+                    "name": "Ing. Filip Waschek",
+                    "title": "Stěhování 3nec, CEO",
+                    "text": "Potřeboval jsem nový web pro své podnikání, a proto jsem se obrátil na mého kamaráda Adama, se kterým jsem chodil na Vysokou školu. Adam mi do několika dnů připravil několik návrhů webu, ze kterých jsem si mohl vybrat. V dalších dnech semnou komunikoval, aby semnou probral, co se mi líbí, a co ne. Adama můžu jen doporučit, skvělá komunikace, pečlivost a zápal pro ten nejlepší výsledek. Ve vyhledávačích jsem na těch nejvyšších pozicích a tak si nemůžu na nic stěžovat. Díky Adame ještě jednou."
+                }
+            ]
+        },
+        "contact": {
+            "badge": "Kontakt",
+            "headline": "Zaujali jsme Vás? Pojďme se spojit.",
+            "text": "Jsme tu od toho, abychom Vám pomohli s Vaším businessem, proto se nám neváhejte ozvat. Budeme reagovat ihned jakmile to bude možné.",
+            "subheadlineForm": "Nezávazná poptávka",
+            "subheadlineInfo": "Kontaktní informace"
+        },
+        "banner": {
+            "headline": "Vstupte s Vaším businesem do 21. století."
+        },
+        "footer": {
+            "headlines": {
+                "address": "Kontakt",
+                "links": "Odkazy",
+                "socials": "Zůstaňme ve spojení"
+            },
+            "copyright": "Všechna práva vyhrazena."
+        }
+    }
+}

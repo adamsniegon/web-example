@@ -1,0 +1,42 @@
+.quickForm {
+    max-width: 460px;
+    display: grid;
+    margin: auto;
+
+    &__button {
+        margin-top: 8px;
+    }
+
+    &__googleRecaptchaNotice {
+        margin-top: 8px;
+    }
+}
+
+@include sm {
+    .quickForm {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "input button"
+            "message message"
+            "googleRecaptchaNotice googleRecaptchaNotice";
+        column-gap: 8px;
+        
+        &__input {
+            grid-area: input;
+        }
+
+        &__button {
+            grid-area: button;
+            align-self: flex-end;
+            margin-top: 0px;
+        }
+
+        &__message {
+            grid-area: message;
+        }
+
+        &__googleRecaptchaNotice {
+            grid-area: googleRecaptchaNotice;
+        }
+    }
+}

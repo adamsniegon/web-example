@@ -1,0 +1,36 @@
+.header {
+    position: sticky;
+    top: 8px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    padding-left: 12px;
+    margin-bottom: 24px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    border: 1px solid var(--secondary-border);
+
+    &__group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__button {
+        display: none;
+        border-radius: 50px;
+        
+    }
+}
+
+@include breakpoint(360px) {
+    .header {
+        &__button {
+            display: block;
+            padding: var(--badge-padding-y) var(--badge-padding-x);
+        }
+    }
+}
